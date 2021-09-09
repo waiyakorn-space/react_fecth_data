@@ -28,7 +28,10 @@ function App() {
   return (
     <div>
       <form
-        onSubmit={event =>{setUrl(`https://hn.algolia.com/api/v1/search?query=${query}`);event.preventDefault()}}
+        onSubmit={(event) => {
+          setUrl(`https://hn.algolia.com/api/v1/search?query=${query}`);
+          event.preventDefault();
+        }}
       >
         {" "}
         <input
